@@ -1,15 +1,258 @@
-.header-contact{
-width: 100%;
-height: 50px;
-background-color: rgb(45, 167, 204);
+.header-contact {
+  display: flex;
+  width: 100%;
+  background-color: rgba(202, 199, 199, 0.747);
+  justify-content: center;
+  justify-items: center;
+}
+.header-contact-in {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  padding: 4px;
+}
+.contant-in {
+  display: flex;
+  gap: 8px;
+  padding: 4px;
+}
+.cantante-text {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  color: #022d62;
+}
+.cantante-text p {
+  font-size: 15px;
+  font-weight: 500;
+}
+.cantante-text p:hover {
+  color: #4c8b81;
 }
 
-.nav-bar{
-width: 100%;
-height: 100px;
-background-color: rgb(12, 168, 77);
+.nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  background-color: whitesmoke;
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
-.home img{
-height: 500px;
-width: 500px;
+.nav-bar-in {
+  display: flex;
+  width: 90%;
+  padding: 2px;
+  justify-content: space-between;
+}
+.togal-btn {
+  border: 1px solid rgba(177, 174, 174, 0.548);
+  font-size: 36px;
+  border-radius: 10px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  display: none;
+}
+
+.logo {
+  display: flex;
+  gap: 2px;
+  padding: 4px;
+}
+.logo img {
+  width: 65px;
+  height: 50px;
+  border-radius: 50px;
+}
+.logo p {
+  color: #022d62;
+  font-size: 19px;
+  font-weight: 600;
+  position: relative;
+  text-align: center;
+  line-height: 1;
+  padding-left: 2px;
+  padding-right: 2px;
+  border-radius: 5px;
+  border-left: 1px solid rgba(18, 15, 51, 0.336);
+  border-right: 1px solid rgba(18, 15, 51, 0.336);
+}
+.logo p::before {
+  content: "──── The ────";
+  display: block;
+  color: rgba(8, 9, 117, 0.712);
+  font-size: 11px;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+.logo p::after {
+  content: "─ Public School ─";
+  display: block;
+  color: rgba(8, 9, 117, 0.712);
+  font-size: 11px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+.nav-subitem {
+  display: flex;
+  gap: 18px;
+  text-align: center;
+  list-style: none;
+}
+.nav-subitem li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #022d62;
+  position: relative;
+}
+.nav-subitem li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: #493e0eb7;
+  transition: width 0.3s ease;
+}
+.nav-subitem li a:hover::after {
+  width: 100%;
+}
+.nav-subitem li a:hover {
+  color: #4c8b81;
+}
+.nav-subitem li a.active {
+  color: #4c8b81;
+}
+.nav-subitem li a.active::after {
+  width: 0;
+}
+.enquire {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.enquire button {
+  height: 40px;
+  width: 100%;
+  background-color: #022d62;
+  color: #ffffff;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+.enquire button:hover {
+  background-color: #4c8b81;
+}
+@media (max-width: 900px) {
+  .nav-subitem {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contant-in {
+    flex-direction: column;
+  }
+
+  .logo img {
+    width: 60px;
+    height: 46px;
+  }
+  .logo p {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .logo p::before {
+    font-size: 10px;
+  }
+  .enquire button {
+    font-size: 12px;
+  }
+
+  .logo p::after {
+    font-size: 10px;
+  }
+  .togal-btn {
+    display: block;
+  }
+  .nav-item {
+    position: absolute;
+    top: 130px;
+    left: 0;
+    z-index: 999;
+    background-color: whitesmoke;
+    width: 100%;
+
+    transform: scaleY(0);
+    transform-origin: top;
+    opacity: 0;
+    transition: 0.4s ease;
+  }
+  .nav-item.show-menu {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+  .nav-item.show-menu {
+    display: block;
+  }
+  .nav-subitem {
+    flex-direction: column;
+    text-align: start;
+    padding: 10px 20px;
+    width: 100%;
+  }
+  .nav-subitem li {
+    padding: 4px 4px;
+  }
+  .nav-subitem li:hover {
+    background-color: #80d4c62d;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .nav-subitem li a::after {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .contant-in {
+    flex-direction: column;
+  }
+  .logo img {
+    width: 58px;
+    height: 44px;
+  }
+  .logo p {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .logo p::before {
+    font-size: 8px;
+  }
+  .logo p::after {
+    font-size: 8px;
+  }
+  .enquire button {
+    font-size: 12px;
+  }
+  .header-contact-in {
+    flex-direction: column;
+  }
+  .nav-item {
+    top: 185px;
+  }
 }

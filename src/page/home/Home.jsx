@@ -4,9 +4,9 @@ export default function Home() {
   return (
     <div className='home'>
 
-      <h1>home</h1>
+      <p>home</p>
 
-    <img src="image/school-logo.png" alt="" />
+    {/* <img src="image/school-logo.png" alt="" /> */}
     </div>
   )
 }
