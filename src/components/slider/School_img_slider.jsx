@@ -15,7 +15,7 @@ import {
 
 import { jsonData } from "../../json/home";
 
-export default function School_img_slider() {
+export default function School_Img_Slider() {
   return (
     <>
       <div className="slider-container">
