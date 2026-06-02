@@ -44,7 +44,7 @@ export default function Header() {
             {menuOpen ? <RxCross2 /> : <IoReorderThreeOutline />}
           </div>
           <div className="logo">
-            <img src="image/logo13.png" alt="" />
+            <img src="image/school_logo2.png" alt="" />
             <p>Excellent</p>
           </div>
           <div className={`nav-item ${menuOpen ? "show-menu" : ""}`}>

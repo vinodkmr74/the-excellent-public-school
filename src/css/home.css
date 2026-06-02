@@ -63,7 +63,7 @@
   padding: 4px;
 }
 .logo img {
-  width: 65px;
+  width: 70px;
   height: 50px;
   border-radius: 50px;
 }
@@ -156,6 +156,12 @@
 .enquire button:hover {
   background-color: #4c8b81;
 }
+
+.home-content {
+  margin-top: 20px;
+  height: 100px;
+}
+
 @media (max-width: 900px) {
   .nav-subitem {
     gap: 16px;
