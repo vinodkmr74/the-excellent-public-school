@@ -5,12 +5,12 @@ import {
   Route,
 } from "react-router-dom";
 import App from "./App";
-import About from "./page/about/about";
 import Academic from "./page/academic/Academic";
 import Admition from "./page/admition/Admition";
 import Contact from "./page/contact/Contact";
 import Blogs from "./page/blogs/Blogs";
 import Home from "./page/home/Home";
+import About from "./page/about/about";
 
 
 export default function Routers() {
