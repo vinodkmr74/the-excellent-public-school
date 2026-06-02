@@ -1,13 +1,11 @@
 import React from "react";
 import { jsonData } from "../../json/home";
 import Text_slider from "../../components/slider/Text_slider";
-import School_Img_Slider from "../../components/slider/school_img_slider";
-// import School_Img_Slider from "../../components/slider/School_Img_Slider";
+import School_Img_Slider from "../../components/slider/School_Img_Slider";
 
 export default function Home() {
   return (
     <>
-      {/* <School_Img_Slider /> */}
       <School_Img_Slider />
 
       <div className="text_slider">
