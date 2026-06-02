@@ -1,5 +1,5 @@
 import React from "react";
-import School_img_slider from "../../components/slider/school_img_slider";
+import School_img_slider from "../../components/slider/School_img_slider";
 import { jsonData } from "../../json/home";
 import Text_slider from "../../components/slider/Text_slider";
 
