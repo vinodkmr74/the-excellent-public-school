@@ -10,7 +10,7 @@ import Admition from "./page/admition/Admition";
 import Contact from "./page/contact/Contact";
 import Blogs from "./page/blogs/Blogs";
 import Home from "./page/home/Home";
-import About from "./page/about/about";
+import About from "./page/about/About";
 
 
 export default function Routers() {
