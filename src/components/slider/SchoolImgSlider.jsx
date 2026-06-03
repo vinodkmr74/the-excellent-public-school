@@ -24,6 +24,8 @@ export default function SchoolImgSlider() {
           navigation={true}
           pagination={true}
           mousewheel={true}
+             loop={true}
+
           keyboard={true}
           autoplay={{
             delay: 5000,
