@@ -9,6 +9,9 @@ import { RxCross2 } from "react-icons/rx";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
 
   return (
     <>
@@ -50,22 +53,34 @@ export default function Header() {
           <div className={`nav-item ${menuOpen ? "show-menu" : ""}`}>
             <ul className="nav-subitem">
               <li>
-                <NavLink to="/">Home</NavLink>
+                <NavLink to="/" onClick={closeMenu}>
+                  Home
+                </NavLink>
               </li>
               <li>
-                <Link to="/about">About</Link>
+                <Link to="/about" onClick={closeMenu}>
+                  About
+                </Link>
               </li>
               <li>
-                <Link to="/admition">Admition</Link>
+                <Link to="/admition" onClick={closeMenu}>
+                  Admission
+                </Link>
               </li>
               <li>
-                <Link to="/academic">Academic</Link>
+                <Link to="/academic" onClick={closeMenu}>
+                  Academic
+                </Link>
               </li>
               <li>
-                <Link to="/contact">Contact</Link>
+                <Link to="/contact" onClick={closeMenu}>
+                  Contact
+                </Link>
               </li>
               <li>
-                <Link to="/blogs">Blogs</Link>
+                <Link to="/blogs" onClick={closeMenu}>
+                  Blogs
+                </Link>
               </li>
             </ul>
           </div>
