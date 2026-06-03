@@ -483,8 +483,8 @@ box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   }
   .est {
     position: absolute;
-    top: 830px;
-    left: 220px;
+          top: 275px;
+        left: 193px;
     height: 220px;
     width: 30%;
   }
