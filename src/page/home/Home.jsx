@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { jsonData } from "../../json/home";
 import Text_slider from "../../components/slider/Text_slider";
 import SchoolImgSlider from "../../components/slider/SchoolImgSlider";
 import { BiBookReader } from "react-icons/bi";
+import "aos/dist/aos.css";
+import Aos from "aos";
 
 export default function Home() {
+    useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <>
       <SchoolImgSlider />
@@ -18,7 +23,8 @@ export default function Home() {
 
       <div className="out-school">
         <div className="out-school-in">
-          <div className="out-schoo-eft">
+
+          <div data-aos="fade-right" className="out-schoo-eft">
             <div className="top-img">
               <img src="image/school-bulldeng.png" alt="bulldeng" />
               <img id="founder-m" src="image/faunder.png" alt="" />
@@ -31,7 +37,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="out-school-right">
+
+          <div data-aos="fade-left" className="out-school-right">
             <div className="about-short">
               <h2>
                 {" "}
@@ -75,6 +82,7 @@ export default function Home() {
               Excellent Learning System.
             </div>
           </div>
+
         </div>
       </div>
     </>
