@@ -194,7 +194,7 @@
   border-bottom-right-radius: 70px;
   border-bottom-left-radius: 50px;
   border-top-left-radius: 10px;
-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .bottom-img {
   display: flex;
@@ -214,7 +214,7 @@ box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   justify-content: center;
   justify-items: center;
   align-items: center;
-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .est h2 {
   color: #ffffff;
@@ -226,7 +226,7 @@ box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   width: 60px;
   height: 60px;
   border-radius: 50%;
-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 #founder-m {
@@ -236,7 +236,7 @@ box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border: 2px dashed #022d62;
   padding: 2px;
   margin-top: 10px;
-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 #dmimg {
@@ -247,7 +247,7 @@ box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border-bottom-right-radius: 70px;
   border-bottom-left-radius: 50px;
   border-top-left-radius: 10px;
-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .about-short h2 {
@@ -484,8 +484,8 @@ box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   }
   .est {
     position: absolute;
-          top: 275px;
-        left: 193px;
+    top: 275px;
+    left: 193px;
     height: 220px;
     width: 30%;
   }
