@@ -5,11 +5,17 @@ import SchoolImgSlider from "../../components/slider/SchoolImgSlider";
 import { BiBookReader } from "react-icons/bi";
 import "aos/dist/aos.css";
 import Aos from "aos";
+import { Link } from "react-router-dom";
+import ActivitiesNo from "../../components/ActivitiesNo";
+import Facilities from "../../components/slider/Facilities";
+
 
 export default function Home() {
     useEffect(() => {
     Aos.init();
   }, []);
+
+
   return (
     <>
       <SchoolImgSlider />
@@ -81,10 +87,33 @@ export default function Home() {
               excellence and holistic development, powered by the innovative
               Excellent Learning System.
             </div>
+
+           <div className="home-about-btn">
+            <Link to="/about">Explore Our School →
+            </Link>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <ActivitiesNo />
+
+      <div className="home-Facilities">
+        <div className="home-Facilities-in">
+          <div className="home-Facilities-heading">
+           <h3><BiBookReader /> Our Facilities</h3>
+           <h2>Facilities At a Glance</h2>
+           <p>The Excellent Public School offers a wide range of modern facilities to support students' academic, spiritual, and social growth.</p>
+          </div>
+          <div data-aos="fade-in" className="facilities-slider">
+            <Facilities />
           </div>
 
         </div>
       </div>
+
+
+
     </>
   );
 }
