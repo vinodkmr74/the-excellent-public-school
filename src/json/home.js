@@ -98,8 +98,16 @@ export const jsonData = {
       text:"The Activity Room at The Excellent Public School is designed to foster creativity, innovation, and holistic development by engaging students in a variety of fun-filled and educational activities.",
       link:"##",
     },
-  
+  ],
 
+  principal:[
+    {
+      id:1,
+      title:"Principal's Vision",
+      text:"The Excellent Public School World School, Methaura we believe that true education is a perfect blend of knowledge and character, aimed at preparing students to become responsible global citizens. Our focus is on creating a stress-free, learner-centric environment that encourages creativity, critical thinking, leadership, and life skills. By integrating academics with co-curricular activities, we ensure the holistic development of every student.",
+       principal:"Vikash Sir",
+       school:"Principal The Excellent Public School",
+    }
   ],
 
 };

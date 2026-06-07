@@ -8,6 +8,7 @@ import Aos from "aos";
 import { Link } from "react-router-dom";
 import ActivitiesNo from "../../components/ActivitiesNo";
 import Facilities from "../../components/slider/Facilities";
+import Principal from "../../components/Principal";
 
 
 export default function Home() {
@@ -112,7 +113,7 @@ export default function Home() {
         </div>
       </div>
 
-
+       <Principal />
 
     </>
   );
