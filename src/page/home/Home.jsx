@@ -9,6 +9,11 @@ import { Link } from "react-router-dom";
 import ActivitiesNo from "../../components/ActivitiesNo";
 import Facilities from "../../components/slider/Facilities";
 import Principal from "../../components/Principal";
+import NoticeBord from "../../components/NoticeBord";
+import { IoIosEye } from "react-icons/io";
+import { GiBullseye } from "react-icons/gi";
+import { PiTriangleDashedFill } from "react-icons/pi";
+
 
 
 export default function Home() {
@@ -114,6 +119,27 @@ export default function Home() {
       </div>
 
        <Principal />
+
+       <div className="homemissionVision">
+         <div className="homemissionVision-in">
+
+           <div data-aos="fade-right" className="NoticebordBox">
+            <NoticeBord />
+           </div>
+            <div className="homemissionVisionText">
+              <h3>  <BiBookReader /> The Excellent Public School </h3>
+              <h2><span>Our</span> Mission <span>Our</span> Vision</h2>
+              <h4> <GiBullseye id="misIcon"/> Our Mission </h4>
+              <p>MWS Patna is committed to nurture the inherent potential and talent of each child, creating lifelong learners who will be the leaders of tomorrow.</p>
+               <h4> <IoIosEye id="misIcon"/> Our Vision</h4>
+              <p>Our school vision at MWS Patna centers on recognizing that children are not just roll numbers, but unique individuals with distinct talents and potentials.</p>
+               <h4> <PiTriangleDashedFill id="misIcon" /> Our Values</h4>
+              <p>Our school vision at MWS Patna centers on recognizing that children are not just roll numbers, but unique individuals with distinct talents and potentials.</p>
+            </div>
+         </div>
+
+       </div>
+      
 
     </>
   );
