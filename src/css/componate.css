@@ -337,14 +337,13 @@
   width: 100%;
   flex-direction: column;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-
 }
 .notice-board-in {
   display: block;
   width: 100%;
   height: 120px;
- background: linear-gradient(45deg, #ff4d4d, #ff9900);  
-border-top-left-radius: 50px;
+  background: linear-gradient(45deg, #ff4d4d, #ff9900);
+  border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   text-align: center;
   padding: 18px;
@@ -416,6 +415,24 @@ border-top-left-radius: 50px;
   .notice-board-in {
     height: 160px;
   }
+}
+
+.allbtn {
+  display: flex;
+  width: 190px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #022d62;
+  justify-content: center;
+  justify-items: center;
+}
+.allbtn a {
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+}
+.allbtn:hover {
+  background-color: #007aff;
 }
 
 @media (max-width: 768px) {

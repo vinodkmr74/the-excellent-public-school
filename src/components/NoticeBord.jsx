@@ -20,12 +20,8 @@ export default function NoticeBord() {
             onMouseOut={(e) => e.target.start()}
           >
             <div className="notice-information-in">
-              <h3>Admission Open 2025 - 2026
-
-              </h3>
-                                 <span className="new-badge">NEW</span>
-
-              
+              <h3>Admission Open 2025 - 2026</h3>
+              <span className="new-badge">NEW</span>
             </div>
           </marquee>
         </div>
