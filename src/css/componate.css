@@ -411,6 +411,10 @@
     transform: scale(1);
   }
 }
+/* .gallery{
+width: 100%;
+} */
+
 @media (max-width: 900px) {
   .notice-board-in {
     height: 160px;

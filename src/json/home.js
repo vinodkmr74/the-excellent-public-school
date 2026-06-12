@@ -127,4 +127,52 @@ export const jsonData = {
       text: "At The Excellent Public School, we are guided by the core values of Integrity, Respect, Excellence, Responsibility, Compassion, and Teamwork. We encourage our students to develop strong moral character, embrace diversity, act with honesty, and strive for excellence in all aspects of life. These values shape responsible citizens and future leaders who contribute positively to society.",
     },
   ],
+  gallery: [
+    {
+      id: 1,
+      image: "image/aisv1_0008-2.jpg",
+    },
+    {
+      id: 2,
+      image: "image/fgf.jpeg",
+    },
+    {
+      id: 3,
+      image: "image/group.png",
+    },
+    {
+      id: 4,
+      image: "image/Scr_event.png",
+    },
+    {
+      id: 5,
+      image: "image/te-day.png",
+    },
+    {
+      id: 6,
+      image: "image/Sc.png",
+    },
+    {
+      id: 7,
+      image: "image/WhatsAggggh.jpeg",
+    },
+    {
+      id: 8,
+      image: "image/student.png",
+    },
+        {
+      id: 9,
+      image: "image/student.png",
+    },
+        {
+      id: 10,
+      image: "image/student.png",
+    },    {
+      id: 11,
+      image: "image/student.png",
+    },    {
+      id: 12,
+      image: "image/student.png",
+    },
+  ],
 };

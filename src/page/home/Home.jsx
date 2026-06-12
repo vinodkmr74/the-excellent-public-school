@@ -15,6 +15,7 @@ import { GiBullseye } from "react-icons/gi";
 import { PiTriangleDashedFill } from "react-icons/pi";
 import Btn from "../../components/Btn";
 import { FaPlay, FaPause } from "react-icons/fa";
+import Gallery from "../../components/Gallery";
 
 export default function Home() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -248,6 +249,24 @@ export default function Home() {
                 {isPlaying ? <FaPause /> : <FaPlay />}
               </button>
             )}
+          </div>
+        </div>
+      </div>
+
+      <div  className="homeGallery">
+        <div className="homeGallery-in">
+          <div className="homeGalleryText">
+            <h3>
+              <BiBookReader /> NEW Event The Excellent public School
+            </h3>
+            <h2> Our School Gallery</h2>
+            <p>
+              Explore our vibrant school gallery showcasing student
+              achievements, events, and memorable moments at our amazing school!
+            </p>
+          </div>
+          <div data-aos="fade-in" className="homeGalleryImgage">
+            <Gallery limit={8} />
           </div>
         </div>
       </div>
