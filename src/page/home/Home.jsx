@@ -16,6 +16,7 @@ import { PiTriangleDashedFill } from "react-icons/pi";
 import Btn from "../../components/Btn";
 import { FaPlay, FaPause } from "react-icons/fa";
 import Gallery from "../../components/Gallery";
+import TeacherTeam from "../../components/slider/TeacherTeam";
 
 export default function Home() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -151,7 +152,6 @@ export default function Home() {
           <div data-aos="fade-right" className="NoticebordBox">
             <NoticeBord />
           </div>
-
           <div data-aos="fade-left" className="homemissionVisionText">
             <h3>
               {" "}
@@ -195,7 +195,7 @@ export default function Home() {
               </div>
             ))}
             <div className="missionBtn">
-              <Btn btnname="Mission Vision → " link="###" />
+              <Btn btnname="Mission Vision → " link="/missionvision" />
             </div>
           </div>
         </div>
@@ -214,7 +214,7 @@ export default function Home() {
               rooms: 00.00Sq. Mt Area of play ground: 0000 sq. mtrs approx.
             </p>
             <div className="missionBtn">
-              <Btn btnname="Read More → " link="###" />
+              <Btn btnname="Read More → " link="/campus" />
             </div>
           </div>
           <div data-aos="fade-left" className="videoright">
@@ -253,23 +253,58 @@ export default function Home() {
         </div>
       </div>
 
-      <div  className="homeGallery">
+      <div className="homeGallery">
         <div className="homeGallery-in">
           <div className="homeGalleryText">
             <h3>
               <BiBookReader /> NEW Event The Excellent public School
             </h3>
-            <h2> Our School Gallery</h2>
+            <h2>Our School's Latest Events & Activities Gallery</h2>
             <p>
               Explore our vibrant school gallery showcasing student
               achievements, events, and memorable moments at our amazing school!
             </p>
+            <div className="missionBtn">
+              <Btn btnname="Our Gallery → " link="/blogs" />
+            </div>{" "}
           </div>
           <div data-aos="fade-in" className="homeGalleryImgage">
             <Gallery limit={8} />
           </div>
         </div>
       </div>
+      <div className="TeachingTeam">
+        <div className="TeachingTeam-in">
+          <div data-aos="fade-left" className="TeachingTeamText">
+            <h3>
+              {" "}
+              <BiBookReader />
+              The Excellent Public School Teaching Team{" "}
+            </h3>
+            <h2>Meet Our Teaching Team</h2>
+            <p>
+              Our dedicated and experienced teachers at The Excellent Public
+              School are committed to nurturing young minds, fostering
+              creativity, and helping every student achieve academic excellence.
+            </p>
+            <div className="missionBtn">
+              <Btn btnname="Read more → " link="/about" />
+            </div>
+          </div>
+          <div data-aos="fade-right" className="TeachingTeamSlider">
+            <TeacherTeam />
+          </div>
+        </div>
+      </div>
+
+      <Link
+        to="https://wa.me/919504809748?text=Hello%20The%20Excellent%20Public%20School"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="whatsapp-float"
+      >
+        <img src="image/whatAppImage1.png" alt="WhatsApp" />
+      </Link>
     </>
   );
 }

@@ -1,42 +1,42 @@
 .footer {
+  background-image: url("image/school_logo2.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 30px;
   width: 100%;
-  margin-top: 20px;
-  padding: 10px;
+  position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
-  background: url("/image/school-logo.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative;
+  justify-items: center;
+  margin-top: 70px;
 }
-
-/* Overlay Color */
-.footbg {
+.footer::after {
+  content: "";
   position: absolute;
   inset: 0;
-  background: rgba(9, 45, 88, 0.945);
+  background-color: #141964da;
+  opacity: 1;
 }
 .footer-in {
-  width: 80%;
+  width: 90%;
   display: flex;
-justify-content: space-between;
+  justify-content: space-between;
   margin-top: 10px;
   padding: 10px;
   position: relative;
+  flex-wrap: wrap;
   z-index: 2;
-flex-wrap: wrap;
 }
 .footer-item {
   flex-direction: column;
   justify-content: center;
   justify-items: center;
   padding: 4px;
+  width: 20%;
 }
 .footer-item h1 {
   position: relative;
-  z-index: 2;
   color: #378af0;
   font-size: 18px;
 }
@@ -51,32 +51,24 @@ flex-wrap: wrap;
   line-height: 2.2;
   color: #ffffff;
   position: relative;
-  z-index: 2;
   color: white;
 }
-
 .footer-subitem li a:hover {
   color: #50d8c1;
 }
 .footer-subitem li {
-  transition: 0.3s ease;
+  transition: transform 0.3s ease;
 }
-
 .footer-subitem li:hover {
-  background-color: rgba(222, 233, 235, 0.089);
-  padding-left: 10px;
-  position: relative;
-  z-index: 2;
-  border-radius: 5px;
+  transform: translateX(10px);
 }
 .contant-item {
   flex-direction: column;
   position: relative;
-  z-index: 2;
+  width: 25%;
 }
 .contant-item h1 {
   position: relative;
-  z-index: 2;
   color: #378af0;
   font-size: 18px;
 }
@@ -91,88 +83,103 @@ flex-wrap: wrap;
 }
 #icon-con1 {
   color: #e9cc4b;
-  font-size: 24px;
+  font-size: 22px;
 }
 #icon-con2 {
   color: #17acc0;
-  font-size: 24px;
+  font-size: 22px;
 }
 #icon-con3 {
   color: #e04d33;
-  font-size: 24px;
+  font-size: 50px;
 }
-
-.con-map{
-
+.con-map {
+  width: 22.5%;
 }
-.con-map h1{
+.con-map h1 {
   color: #378af0;
   font-size: 18px;
 }
-
 .map-box {
   width: 100%;
   overflow: hidden;
   border-radius: 12px;
   margin-top: 10px;
 }
-
 .map-box iframe {
   width: 100%;
   border-radius: 12px;
-border: 1px solid rgb(12, 8, 46);
-
+  border: 1px solid rgb(12, 8, 46);
 }
-
+.Copyright{
+display: flex;
+justify-content: center;
+justify-items: center;
+align-items: center;
+margin-top: 10px;
+padding: 20px;
+  color: #374157b0;
+font-size: 11px;
+}
 @media (max-width: 768px) {
-.footer-item h1 {
-  font-size: 16px;
+  .footer-item {
+    width: 50%;
+  }
+  .contant-item {
+    width: 50%;
+  }
+  .con-map {
+    width: 50%;
+  }
+  .footer-item h1 {
+    font-size: 16px;
+  }
+  .footer-subitem li a {
+    font-size: 15px;
+  }
+  .con-map h1 {
+    font-size: 16px;
+  }
+  .contant-item-in {
+    font-size: 15px;
+  }
+  #icon-con1 {
+    font-size: 20px;
+  }
+  #icon-con2 {
+    font-size: 20px;
+  }
+  #icon-con3 {
+    font-size: 42px;
+  }
 }
-.footer-subitem li a {
-  font-size: 15px;
-
-}
-.con-map h1{
-  font-size: 16px;
-}
-.contant-item-in {
-  font-size: 15px;
-
-}
-#icon-con1 {
-  font-size: 20px;
-}
-#icon-con2 {
-  font-size: 20px;
-}
-#icon-con3 {
-  font-size: 20px;
-}
-}
-
 
 @media (max-width: 480px) {
-.footer-item h1 {
-  font-size: 15px;
-}
-.footer-subitem li a {
-  font-size: 14px;
-
-}
-.con-map h1{
-  font-size: 15px;
-}
-.contant-item-in {
-  font-size: 14px;
-
-}
-#icon-con1 {
-  font-size: 19px;
-}
-#icon-con2 {
-  font-size: 19px;
-}
-#icon-con3 {
-  font-size: 19px;
-}
+  .contant-item {
+    width: 100%;
+  }
+  .con-map {
+    width: 100%;
+  }
+  .footer-item h1 {
+    font-size: 15px;
+  }
+  .footer-subitem li a {
+    font-size: 14px;
+  }
+  .con-map h1 {
+    font-size: 15px;
+  }
+  .contant-item-in {
+    font-size: 14px;
+  }
+  #icon-con1 {
+    font-size: 19px;
+  }
+  #icon-con2 {
+    font-size: 19px;
+  }
+  #icon-con3 {
+    font-size: 36px;
+  }
 }

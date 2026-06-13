@@ -11,6 +11,10 @@ import Contact from "./page/contact/Contact";
 import Blogs from "./page/blogs/Blogs";
 import Home from "./page/home/Home";
 import About from "./page/about/About";
+import MissionVision from "./page/about/MissionVision";
+import Facilities from "./components/slider/Facilities";
+import FacilitieAll from "./page/about/FacilitieAll";
+import Campus from "./page/about/Campus";
 
 
 export default function Routers() {
@@ -24,6 +28,12 @@ export default function Routers() {
           <Route path="/admition" element={<Admition />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blogs" element={<Blogs />} />
+          <Route path="/missionvision" element={<MissionVision />}/>
+          <Route path="/facilities" element={<FacilitieAll />}/>
+          <Route path="/campus" element={<Campus />}/>
+
+          
+
         
         </Route>
       </Routes>

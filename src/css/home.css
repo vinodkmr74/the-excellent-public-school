@@ -626,7 +626,7 @@
 }
 .homeGalleryImg {
   display: flex;
-  gap: 10px;
+  gap: 16px;
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
@@ -661,16 +661,16 @@
   z-index: 999;
 }
 .zoomImage {
-  width: 800px;
-  height: 800px;
-  object-fit:fill;
+  width: 650px;
+  height: 600px;
+  object-fit: fill;
   max-width: 80vw;
   max-height: 80vh;
-border-radius: 20px;
+  border-radius: 20px;
 }
 .closeBtn {
   position: absolute;
-  top: -30px;
+  top: -10px;
   background: transparent;
   border: none;
   color: #fff;
@@ -679,11 +679,109 @@ border-radius: 20px;
   z-index: 10000;
   transition: 0.3s;
 }
-
 .closeBtn:hover {
   transform: scale(1.2);
 }
+.TeachingTeam {
+  background-image: url("image/teacher-team.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* min-height: 600px; */
+  padding: 30px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 70px;
+}
+.TeachingTeam::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #141964da;
+  opacity: 1;
+}
+.TeachingTeam-in {
+  width: 90%;
+  flex-direction: column;
+  z-index: 2;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  gap: 30px;
+}
+.TeachingTeamText {
+  width: 100%;
+  text-align: center;
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+}
+.TeachingTeamText h3 {
+  color: #f0a607;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 2;
+  position: relative;
+}
+.TeachingTeamText h3::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-top: 4px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #f0a607, #ff6b00);
+}
+.TeachingTeamText h2 {
+  color: #f0a607;
+  font-size: 40px;
+  font-weight: 700;
+  word-spacing: 5px;
+  line-height: 2;
+}
+.TeachingTeamText p {
+  color: #ffffff;
+  line-height: 1.6;
+  font-size: 18px;
+  width: 70%;
+}
+.TeachingTeamSlider {
+  width: 100%;
+  margin-top: 40px;
+}
+.whatsapp-float {
+  position: fixed;
+  bottom: 120px;
+  left: 20px;
+  z-index: 9999;
+}
+.whatsapp-float img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 50%;
+  animation: whatsappPulse 1.5s infinite;
+}
+.whatsapp-float img:hover {
+  transform: scale(1.3);
+}
+@keyframes whatsappPulse {
+  0% {
+    transform: scale(1);
+  }
 
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
 @media (max-width: 900px) {
   .nav-subitem {
     gap: 16px;
@@ -883,8 +981,7 @@ border-radius: 20px;
   }
   .homeGalleryImg img {
     width: 48%;
-  aspect-ratio: 4/2;
-
+    aspect-ratio: 4/2;
   }
   .zoomImage {
     width: 95%;
@@ -909,11 +1006,23 @@ border-radius: 20px;
   .homeGalleryText p {
     font-size: 17px;
   }
-.imageModal {
-  top: -130px;
-  left: 0;
-}
-
+  .imageModal {
+    top: -130px;
+    left: 0;
+  }
+  .TeachingTeamText h3 {
+    font-size: 17px;
+  }
+  .TeachingTeamText h2 {
+    font-size: 30px;
+    word-spacing: 0px;
+    line-height: 1.5;
+  }
+  .TeachingTeamText p {
+    font-size: 17px;
+    width: 100%;
+    line-height: 1.5;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1033,21 +1142,21 @@ border-radius: 20px;
   }
   .homeGalleryImg img {
     width: 100%;
-  aspect-ratio: 4/2;
+    aspect-ratio: 4/2;
   }
-.zoomImage {
-  width: 100%;
-  height: 300px;
-  object-fit:fill;
-}
+  .zoomImage {
+    width: 100%;
+    height: 300px;
+    object-fit: fill;
+  }
   .closeBtn {
     top: 500px;
   }
-.imageModal {
-/* height: 500px; */
-  top: 10px;
-  left: 0;
-}
+  .imageModal {
+    /* height: 500px; */
+    top: 10px;
+    left: 0;
+  }
   .homeGalleryText h3 {
     font-size: 16px;
   }
@@ -1055,9 +1164,11 @@ border-radius: 20px;
     width: 100%;
   }
   .homeGalleryText h2 {
-    font-size: 30px;
+    font-size: 28px;
+    word-spacing: 0px;
   }
   .homeGalleryText p {
     font-size: 16px;
+    width: 100%;
   }
 }

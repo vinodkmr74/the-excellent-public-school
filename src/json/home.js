@@ -59,45 +59,47 @@ export const jsonData = {
   Facilities: [
     {
       id: 1,
+      rating: 5,
       image: "image/jpsdausa13.jpg",
       title: "Computer Lab",
       text: "The Computer Lab provides students with access to modern technology, helping them develop digital skills, coding knowledge, and confidence in using computers effectively.",
-      link: "##",
+      link: "/facilities",
     },
     {
       id: 2,
+      rating: 5,
       image: "image/boy-girls-sitting-desk-looking-tablet-1-1080x675.jpg",
       title: "Smart Classrooms",
       text: "  Smart Classrooms use modern technology and interactive learning tools to create an engaging and effective educational experience for students.",
-      link: "##",
+      link: "/facilities",
     },
     {
       id: 3,
       image: "image/transport.png",
       title: "Transportation",
       text: "The Excellent Public School offers a well-organized transportation system with modern buses and experienced staff, ensuring a safe and comfortable journey for students every day.",
-      link: "##",
+      link: "/facilities",
     },
     {
       id: 4,
       image: "image/images.png",
       title: "School Library",
       text: "The School Library at The Excellent Public School serves as a center of learning and discovery, helping students expand their knowledge, improve their reading skills, and develop a passion for lifelong learning.",
-      link: "##",
+      link: "/facilities",
     },
     {
       id: 5,
       image: "image/aisv1_0008-2.jpg",
       title: "Music and Dance",
       text: "At The Excellent Public School, Music and Dance activities help students discover their artistic potential, enhance their cultural awareness, and develop confidence through creative expression and performance.",
-      link: "##",
+      link: "/facilities",
     },
     {
       id: 6,
       image: "image/ar9.jpg",
       title: "Activity Room",
       text: "The Activity Room at The Excellent Public School is designed to foster creativity, innovation, and holistic development by engaging students in a variety of fun-filled and educational activities.",
-      link: "##",
+      link: "/facilities",
     },
   ],
 
@@ -160,19 +162,56 @@ export const jsonData = {
       id: 8,
       image: "image/student.png",
     },
-        {
+    {
       id: 9,
       image: "image/student.png",
     },
-        {
+    {
       id: 10,
       image: "image/student.png",
-    },    {
+    },
+    {
       id: 11,
       image: "image/student.png",
-    },    {
+    },
+    {
       id: 12,
       image: "image/student.png",
+    },
+  ],
+
+  TeacherTeam: [
+    {
+      id: 1,
+      name: "Abc Singh",
+      designation: "English Teacher",
+      description:
+        "Experienced educator with a passion for academic excellence. Dedicated to improving students' communication skills and building confidence in language learning.",
+      image: "image/teachers.png",
+    },
+    {
+      id: 2,
+      name: "Rahul Kumar",
+      designation: "Computer Teacher",
+      description:
+        "Dedicated to fostering a positive learning environment. Encourages students to explore technology, coding, and digital innovation with practical knowledge.",
+      image: "image/teachers.png",
+    },
+    {
+      id: 3,
+      name: "Priya Sharma",
+      designation: "Mathematics Teacher",
+      description:
+        "Helping students build strong analytical skills. Focuses on making mathematics engaging, understandable, and enjoyable for every learner.",
+      image: "image/mam.jpg",
+    },
+    {
+      id: 4,
+      name: "Varsha Verma",
+      designation: "Science Teacher",
+      description:
+        "Encouraging curiosity and scientific thinking. Inspires students to explore the wonders of science through experiments and real-world applications.",
+      image: "image/mam.jpg",
     },
   ],
 };

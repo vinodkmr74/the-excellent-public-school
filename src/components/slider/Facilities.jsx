@@ -47,7 +47,7 @@ export default function Facilities() {
             <p>{item.text}</p>
 
             <div className="Facilities-btn">
-              <Link to="#">Read More →</Link>
+              <Link to={item.link}>Read More →</Link>
             </div>
           </SwiperSlide>
         ))}
