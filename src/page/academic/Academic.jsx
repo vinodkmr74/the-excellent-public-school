@@ -1,7 +1,14 @@
-import React from 'react'
+import React from "react";
+import AllPageheding from "../../components/AllPageheding";
 
 export default function Academic() {
   return (
-    <div>Academic</div>
-  )
+    <>
+      <AllPageheding
+        image="image/view-school-supplies-desk_23-2151110149.jpg"
+        heading="Academic"
+        text="Providing quality education that inspires learning, creativity, and excellence."
+      />
+    </>
+  );
 }

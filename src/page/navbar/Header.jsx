@@ -34,7 +34,6 @@ export default function Header() {
           <div className="contant-in">
             <div className="cantante-text">
               <MdOutlineEmail className="iconContact" />
-
               <p>
                 <a href="mailto:excellent12@gmail.com">excellent12@gmail.com</a>
               </p>

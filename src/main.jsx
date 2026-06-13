@@ -6,6 +6,7 @@ import Routers from './routers.jsx'
 import './css/home.css'
 import './css/footer.css'
 import './css/componate.css'
+import './css/blogs.css'
 
 
 

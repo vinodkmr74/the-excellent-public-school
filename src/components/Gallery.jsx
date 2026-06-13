@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { jsonData } from "../json/home";
 
-export default function Gallery({ limit }) {
+export default function Gallery({ limit,imageWidth = "24%" }) {
   const [selectedImage, setSelectedImage] = useState(null);
 
     const galleryImages = limit
@@ -16,6 +16,7 @@ export default function Gallery({ limit }) {
             key={index}
             src={item.image}
             alt={`Gallery ${item.id}`}
+              style={{ width: imageWidth }}
             onClick={() => setSelectedImage(item.image)}
           />
         ))}

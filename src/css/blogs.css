@@ -1,0 +1,89 @@
+.allimagebloges{
+display: flex;
+margin-top: 40px;
+width: 90%;
+justify-content: center;
+justify-items: center;
+justify-self: center;
+}
+.blogstext{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 30px;
+}
+.blogstext-in{
+  flex-direction: column;
+  width: 90%;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.blogestext{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  align-items: center;
+}
+.blogestext h3 {
+  color: #f0a607;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 2;
+  position: relative;
+  text-align: center;
+}
+.blogestext h3::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin: 4px auto 0;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #f0a607, #ff6b00);
+}
+.blogestext h2 {
+  line-height: 2;
+  font-size: 36px;
+  font-weight: 700;
+  color: #022d62;
+}
+.blogestext p {
+  width: 60%;
+  font-size: 18px;
+  font-weight: 600;
+  color: #364056;
+}
+
+@media (max-width: 768px) {
+.blogestext h3 {
+    font-size: 17px;
+  }
+  .blogestext p {
+    width: 100%;
+  }
+  .blogestext h2 {
+    font-size: 32px;
+  }
+  .blogestext p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 480px) {
+.blogestext h3 {
+    font-size: 16px;
+  }
+  .blogestext p {
+    width: 100%;
+  }
+  .blogestext h2 {
+    font-size: 28px;
+  }
+  .blogestext p {
+    font-size: 16px;
+  }
+}
