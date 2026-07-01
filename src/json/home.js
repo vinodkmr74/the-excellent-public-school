@@ -214,4 +214,25 @@ export const jsonData = {
       image: "image/mam.jpg",
     },
   ],
+
+  about:[
+    {
+      id:1,
+      image:"image/Orange and White Modern Welcome To My Channel YouTube Thumbnail11.png",
+      title:"About Our School",
+      heading:"Welcome The Excellent Public School !",
+      text:"MWS Patna is a premier co-educational, CBSE-affiliated institution committed to excellence in education. Rooted in Indian values and our rich cultural heritage, the school seamlessly integrates a global perspective into its academic framework. We provide a nurturing and inclusive learning environment from Nursery to Class XII, focusing on the holistic development of every child. Our well-structured curriculum fosters academic excellence, creativity, critical thinking, and strong moral values, preparing students to thrive in an ever-evolving world.",
+      text2:"At MWS Patna, we believe that education goes beyond textbooks. We encourage students to explore the beauty of colours, appreciate the melody of sounds, and embrace the rhythm of life, making them aesthetically aware and artistically expressive. Through diverse art forms, learners develop graceful expression through dance and drama, experience the joy of music, and convey their imagination and emotions through painting and other creative pursuits. Our aim is to nurture confident, compassionate, and culturally grounded global citizens.",
+    },
+     {
+      id:2,
+      image:"image/system-image.png",
+      title:"About Our School",
+      heading:"Our Belief System !",
+      text:"MWS Patna is a premier co-educational, CBSE-affiliated institution committed to excellence in education. Rooted in Indian values and our rich cultural heritage, the school seamlessly integrates a global perspective into its academic framework. We provide a nurturing and inclusive learning environment from Nursery to Class XII, focusing on the holistic development of every child. Our well-structured curriculum fosters academic excellence, creativity, critical thinking, and strong moral values, preparing students to thrive in an ever-evolving world.",
+      text2:"At MWS Patna, we believe that education goes beyond textbooks. We encourage students to explore the beauty of colours, appreciate the melody of sounds, and embrace the rhythm of life, making them aesthetically aware and artistically expressive. Through diverse art forms, learners develop graceful expression through dance and drama, experience the joy of music, and convey their imagination and emotions through painting and other creative pursuits. Our aim is to nurture confident, compassionate, and culturally grounded global citizens.",
+    },
+
+  ],
+
 };

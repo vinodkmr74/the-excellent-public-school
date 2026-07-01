@@ -273,6 +273,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       <div className="TeachingTeam">
         <div className="TeachingTeam-in">
           <div data-aos="fade-left" className="TeachingTeamText">

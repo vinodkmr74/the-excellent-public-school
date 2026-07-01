@@ -609,7 +609,6 @@
   padding: 30px;
   align-items: center;
 }
-
 .homeGalleryText h3 {
   color: #f0a607;
   font-size: 18px;
@@ -663,9 +662,8 @@
   transition: transform 0.3s ease;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-margin-top: 20px;
+  margin-top: 20px;
 }
-
 .homeGalleryImg img:hover {
   transform: scale(1.05);
 }
@@ -683,7 +681,7 @@ margin-top: 20px;
   z-index: 999;
 }
 .zoomImage {
-  width: 650px;
+  width: 60%;
   height: 580px;
   object-fit: fill;
   max-width: 80vw;

@@ -7,6 +7,7 @@ import './css/home.css'
 import './css/footer.css'
 import './css/componate.css'
 import './css/blogs.css'
+import './css/about.css'
 
 
 

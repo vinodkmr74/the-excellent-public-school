@@ -513,13 +513,13 @@
   font-weight: 700;
 }
 .allPagehedingsection {
-   width: 100%;
-  height: 320px;
+  width: 100%;
+  height: 340px;
   position: relative;
 }
 .allPagehedingsection img {
- width: 100%;
-  height: 320px;
+  width: 100%;
+  height: 340px;
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -542,19 +542,18 @@
   align-items: center;
   text-align: center;
 }
-.allPagehedingsection-in h2{
-font-size: 40px;
-font-weight: 700;
-color: #f7f7f8;
-z-index: 999;
+.allPagehedingsection-in h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #f7f7f8;
+  z-index: 999;
 }
-.allPagehedingsection-in p{
-font-size: 21px;
-font-weight: 500;
-color: rgb(247, 250, 250);
-z-index: 999;
+.allPagehedingsection-in p {
+  font-size: 21px;
+  font-weight: 500;
+  color: rgb(247, 250, 250);
+  z-index: 999;
 }
-
 
 @media (max-width: 900px) {
   .notice-board-in {
@@ -686,18 +685,18 @@ z-index: 999;
   .TeacherTeamSwiperSlider p {
     font-size: 15px;
   }
-.allPagehedingsection {
-  height: 260px;
-}
-.allPagehedingsection img {
-  height: 260px;
-}
-.allPagehedingsection-in h2{
-font-size: 38px;
-}
-.allPagehedingsection-in p{
-font-size: 19px;
-}
+  .allPagehedingsection {
+    height: 260px;
+  }
+  .allPagehedingsection img {
+    height: 260px;
+  }
+  .allPagehedingsection-in h2 {
+    font-size: 38px;
+  }
+  .allPagehedingsection-in p {
+    font-size: 19px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -725,19 +724,19 @@ font-size: 19px;
   .notice-board-in p {
     font-size: 16px;
   }
-.allPagehedingsection {
-  height: 230px;
-}
-.allPagehedingsection img {
-  height: 230px;
-}
-.allPagehedingsection-in h2{
-font-size: 34px;
-font-weight: 600;
-}
-.allPagehedingsection-in p{
-font-size: 18px;
-}
+  .allPagehedingsection {
+    height: 230px;
+  }
+  .allPagehedingsection img {
+    height: 230px;
+  }
+  .allPagehedingsection-in h2 {
+    font-size: 34px;
+    font-weight: 600;
+  }
+  .allPagehedingsection-in p {
+    font-size: 18px;
+  }
 }
 
 /* 
